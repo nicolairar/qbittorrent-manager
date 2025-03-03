@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  qbit-manager:
+    build: .
+    container_name: qbit-manager
+    restart: unless-stopped
+    volumes:
+      - ./logs:/var/log
